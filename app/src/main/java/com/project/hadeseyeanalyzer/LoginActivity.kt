@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
                         dialog.successDialog(
                             "Success", "Login Successfully", "OK",
                             Runnable {
-                                intent = Intent(this, MainActivity::class.java)
+                                intent = Intent(this, DashboardActivity::class.java)
                                 startActivity(intent)
                                 finish()
                             })
@@ -137,7 +137,7 @@ class LoginActivity : AppCompatActivity() {
         val credential = GoogleAuthProvider.getCredential(account.idToken, null)
         firebaseAuth.signInWithCredential(credential).addOnCompleteListener {
             if (it.isSuccessful) {
-                intent = Intent(this, MainActivity::class.java)
+                intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
