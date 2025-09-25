@@ -6,6 +6,7 @@
     android:background="@color/primarycolor"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
+    <include layout="@layout/tool_bar"/>
 
     <FrameLayout
         android:id="@+id/frame_layout"
