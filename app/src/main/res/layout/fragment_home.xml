@@ -191,6 +191,7 @@
                         android:layout_weight="1"
                         android:layout_marginEnd="8dp"
                         android:background="@drawable/green_button"
+                        android:backgroundTint="#18A74C"
                         android:gravity="center"
                         android:drawableLeft="@drawable/play"
                         android:drawablePadding="8dp"
@@ -208,6 +209,7 @@
                         android:layout_weight="1"
                         android:layout_marginStart="8dp"
                         android:background="@drawable/blue_button"
+                        android:backgroundTint="#0077B6"
                         android:gravity="center"
                         android:drawableLeft="@drawable/sine_wave"
                         android:drawablePadding="8dp"
@@ -352,11 +354,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Breach Name                                               Pwned Counts"
+                    android:text="Breach Name                                             Pwned Counts"
                     android:textColor="#AAAAAA"
                     android:padding="4dp" />
 
-                <!-- First Item -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -364,19 +365,20 @@
                     android:gravity="center_vertical"
                     android:paddingVertical="6dp">
 
-                    <View
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_marginEnd="8dp"/>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Giglio                                                                 950.5k"
+                        android:text="Giglio                                                                     950.5k"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"/>
                 </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"/>
+
+                <!-- Second Item -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -384,19 +386,20 @@
                     android:gravity="center_vertical"
                     android:paddingVertical="6dp">
 
-                    <View
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_marginEnd="8dp"/>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Github                                                                 200.5k"
+                        android:text="Github                                                                     1.3M"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"/>
                 </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"/>
+
+                <!-- Third Item -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -404,15 +407,10 @@
                     android:gravity="center_vertical"
                     android:paddingVertical="6dp">
 
-                    <View
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_marginEnd="8dp"/>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Google                                                                 1.5M"
+                        android:text="Facebook                                                                 4M"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"/>
                 </LinearLayout>
