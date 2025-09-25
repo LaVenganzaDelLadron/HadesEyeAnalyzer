@@ -6,7 +6,15 @@
     android:background="@color/primarycolor"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
-    <include layout="@layout/tool_bar"/>
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
     <FrameLayout
         android:id="@+id/frame_layout"
