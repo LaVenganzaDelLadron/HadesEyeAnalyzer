@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "173235911454",
+    "project_id": "hadeseye-8c819",
+    "storage_bucket": "hadeseye-8c819.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173235911454:android:72fa12ccb024ede870270f",
+        "android_client_info": {
+          "package_name": "com.project.hadeseyeanalyzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173235911454-7pat3jq3rqdmeukvafqomg6ca9vggmkh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.hadeseyeanalyzer",
+            "certificate_hash": "21b4018cb07757aaf72ef7f4bcfbaaae51ce34e7"
+          }
+        },
+        {
+          "client_id": "173235911454-90u1p3kd317j34aav47lp1jeuan6nljt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCODOPC8H_IV0Lkw-Eclv-SJJS71BE9mSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173235911454-90u1p3kd317j34aav47lp1jeuan6nljt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_variant"/>
+    <item android:title="Scan"
+        android:id="@+id/scan"
+        android:icon="@drawable/skull_scan"/>
+    <item android:title="Report"
+        android:id="@+id/report"
+        android:icon="@drawable/clipboard_text_clock"/>
+    <item android:title="Account"
+        android:id="@+id/account"
+        android:icon="@drawable/account_circle"/>
+</menu>
