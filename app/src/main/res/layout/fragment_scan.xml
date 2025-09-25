@@ -57,11 +57,11 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
-                    android:drawableTop="@drawable/play"
+                    android:drawableTop="@drawable/file"
                     android:background="@drawable/green_button"
                     android:text="File Scan"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
                     android:textSize="14sp" />
 
                 <Button
@@ -70,11 +70,11 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="8dp"
-                    android:drawableTop="@drawable/play"
+                    android:drawableTop="@drawable/web_box"
                     android:background="@drawable/green_button"
                     android:text="URL Scan"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
                     android:textSize="14sp" />
 
                 <Button
@@ -82,11 +82,11 @@
                     android:layout_width="0dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/play"
+                    android:drawableTop="@drawable/shield_account"
                     android:background="@drawable/green_button"
                     android:text="Breach Check"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
                     android:textSize="14sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -98,11 +98,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp">
 
-            <!-- FILE SCAN CARD -->
             <include layout="@layout/file_scan_layout"/>
 
-            <!-- URL SCAN CARD -->
             <include layout="@layout/url_scan_layout"/>
+
+            <include layout="@layout/breach_layout"/>
 
 
         </ViewFlipper>
