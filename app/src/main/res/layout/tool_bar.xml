@@ -21,7 +21,7 @@
         android:id="@+id/settingIcon"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:src="@drawable/settings"
+        android:src="@drawable/baseline_settings_24"
         android:scaleType="fitCenter"
         android:contentDescription="Settings"
         android:layout_alignParentEnd="true"
