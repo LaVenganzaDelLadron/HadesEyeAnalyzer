@@ -187,6 +187,7 @@
                     android:orientation="horizontal"
                     android:gravity="center">
 
+                    <!-- Start Scan Button -->
                     <Button
                         android:id="@+id/btnStartScan"
                         android:layout_width="0dp"
@@ -194,7 +195,6 @@
                         android:layout_weight="1"
                         android:layout_marginEnd="8dp"
                         android:background="@drawable/green_button"
-                        android:backgroundTint="#18A74C"
                         android:gravity="center"
                         android:drawableLeft="@drawable/play"
                         android:drawablePadding="8dp"
@@ -204,7 +204,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp" />
 
-
+                    <!-- View Reports Button -->
                     <Button
                         android:id="@+id/btnViewReports"
                         android:layout_width="0dp"
@@ -212,7 +212,6 @@
                         android:layout_weight="1"
                         android:layout_marginStart="8dp"
                         android:background="@drawable/blue_button"
-                        android:backgroundTint="#0077B6"
                         android:gravity="center"
                         android:drawableLeft="@drawable/sine_wave"
                         android:drawablePadding="8dp"
@@ -224,6 +223,7 @@
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
 
         <!-- Recent Activity -->
         <androidx.cardview.widget.CardView

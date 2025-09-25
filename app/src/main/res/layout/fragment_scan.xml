@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0B0F12"
+    android:padding="16dp"
     tools:context=".fragments.ScanFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-</FrameLayout>
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvThreatScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THREAT SCANNER"
+            android:textColor="@color/green"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload files, scan URLs, or check for data breaches"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- Scan Mode Buttons -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#1A1F26"
+            app:cardCornerRadius="12dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <Button
+                    android:id="@+id/btnFileScan"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:drawableTop="@drawable/play"
+                    android:background="@drawable/green_button"
+                    android:text="File Scan"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnUrlScan"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="8dp"
+                    android:drawableTop="@drawable/play"
+                    android:background="@drawable/green_button"
+                    android:text="URL Scan"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnBreachCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/play"
+                    android:background="@drawable/green_button"
+                    android:text="Breach Check"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ViewFlipper (Switchable content) -->
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- FILE SCAN CARD -->
+            <include layout="@layout/file_scan_layout"/>
+
+            <!-- URL SCAN CARD -->
+            <include layout="@layout/url_scan_layout"/>
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+</ScrollView>
