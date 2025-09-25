@@ -1,0 +1,21 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF0000"/> <!-- Neon green fill when pressed -->
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="#FF0000"/>
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/> <!-- Transparent background -->
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="#FF0000"/> <!-- Outline -->
+        </shape>
+    </item>
+
+</selector>
