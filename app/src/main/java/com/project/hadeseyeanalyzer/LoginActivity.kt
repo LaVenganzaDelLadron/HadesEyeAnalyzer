@@ -41,7 +41,6 @@ class LoginActivity : AppCompatActivity() {
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
-
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
         binding.googleIcon.setOnClickListener {
@@ -121,27 +120,29 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun handleResultTask(task: Task<GoogleSignInAccount>) {
+    private fun handleResultTask(task: Task<GoogleSignInAccount>) {ss
         if (task.isSuccessful) {
             val account: GoogleSignInAccount? = task.result
             if (account != null) {
                 updateUI(account)
             }
         } else {
-            dialog.invalidDialog("Error", "Failed to signup")
+            Log.w("LoginActivity", "Google Sign-In failed", task.exception)
+            dialog.invalidDialog("Error", "Failed to signup. Check logs for details.")
         }
     }
 
     private fun updateUI(account: GoogleSignInAccount) {
         Log.d("LoginActivity", "Updating UI with account: ${account.email}")
         val credential = GoogleAuthProvider.getCredential(account.idToken, null)
-        firebaseAuth.signInWithCredential(credential).addOnCompleteListener {
-            if (it.isSuccessful) {
+        firebaseAuth.signInWithCredential(credential).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
                 intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
-                dialog.invalidDialog("Error", "Failed to Login")
+                Log.w("LoginActivity", "Firebase credential sign-in failed", task.exception)
+                dialog.invalidDialog("Error", "Failed to Login. Check logs for details.")
             }
         }
     }
