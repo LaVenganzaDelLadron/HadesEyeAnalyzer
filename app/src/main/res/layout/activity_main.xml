@@ -97,6 +97,7 @@
                         android:foreground="?attr/selectableItemBackgroundBorderless">
 
                         <ImageView
+                            android:id="@+id/googleIcon"
                             android:layout_width="28dp"
                             android:layout_height="28dp"
                             android:layout_gravity="center"

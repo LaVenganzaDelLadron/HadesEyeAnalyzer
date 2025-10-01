@@ -120,7 +120,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun handleResultTask(task: Task<GoogleSignInAccount>) {ss
+    private fun handleResultTask(task: Task<GoogleSignInAccount>) {
         if (task.isSuccessful) {
             val account: GoogleSignInAccount? = task.result
             if (account != null) {
